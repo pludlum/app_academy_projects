@@ -1,0 +1,31 @@
+// Use the gear_dropdown.png screenshot as a style guide
+
+
+.gear-dropdown {
+  position: absolute;
+  background-color: $lightest-gray;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  color: black;
+  font-family: $sans-serif;
+  font-size: 20px;
+  text-align: left;
+  width: 200;
+
+  box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+}
+
+ul li {
+  position: relative;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.dropdown-subtitle {
+  padding: 10px;
+}
+
+.editions {
+  border-bottom: thin solid $light-gray;
+}
