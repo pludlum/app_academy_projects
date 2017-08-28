@@ -1,13 +1,14 @@
-<% if action == 'log_in' %>
-<% action_url = session_url %>
+<% if action == :signup %>
+  <% action_url = users_url %>
 <% else %>
-<% action_url = users_url %>
+  <% action_url = session_url %>
 <% end %>
+
 
 <form class="" action="<%= action_url%> " method="post">
   <%= authenticity_token %>
-  <label for="email">email</label>
-  <input id="email" type="text" name="user[user_name]" value="<%=user.email%>">
+  <label for="email">Email</label>
+  <input id="email" type="text" name="user[email]" value="<%= user.email %>">
   <br>
   <label for="pwd">Password</label>
   <input id="pwd" type="password" name="user[password]" value="">

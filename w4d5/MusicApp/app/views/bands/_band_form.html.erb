@@ -1,0 +1,13 @@
+
+<% if action == :new %>
+  <% action_url = bands_url %>
+<% else %>
+  <% action_url = band_url %>
+<% end %>
+
+<form  action="action_url" method="post">
+  <%= authenticity_token %>
+  <label for="name">BAND NAME</label>
+  <input id="name" type="text" name="band[name]" value="<%= band.name || '' %>">
+  <input type="submit" name="" value="Submit">
+</form>

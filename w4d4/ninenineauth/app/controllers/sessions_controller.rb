@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   before_action :already_logged, only: [:new, :create]
-  
+
   def new
     @user = User.new
     render :new
