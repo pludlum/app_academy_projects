@@ -1,0 +1,47 @@
+
+h1  {
+  display: block;
+  text-align: center;
+}
+
+figure.hanoi {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  width: 600px;
+  margin: auto;
+}
+
+.pile {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  border: 10px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 225px;
+  padding: 0;
+  margin: 0 25px;
+  /*margin-right: 25px;
+  margin-left: 25px;*/
+}
+
+ul.pile li {    /* Give us all discs */
+  list-style: none;
+}
+
+.disc-1 {
+
+}
+
+.disc-2 {
+
+}
+
+.disc-3 {
+
+}
